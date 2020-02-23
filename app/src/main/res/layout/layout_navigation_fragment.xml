@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@android:color/white"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:padding="@dimen/default_padding"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:text="@string/current_fragment_number"
+            style="@style/MaterialText.Title.Secondary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/number"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            style="@style/MaterialText.Title.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:text="@string/current_fragment_number_description"
+            style="@style/MaterialText.Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View style="@style/Separator.Space"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:text="@string/attach_new_fragment"
+            style="@style/MaterialText.Title.Secondary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:text="@string/fragment_animation_subtitle"
+            style="@style/MaterialText.SubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/MaterialEditText.Selector"
+                android:background="@android:color/transparent"
+                android:drawableEnd="@drawable/ic_arrow_left"
+                android:hint="@string/animation"
+                android:text="@string/animation_slide_left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_arrow_left" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:text="@string/fragment_animation_description"
+            style="@style/MaterialText.Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View style="@style/Separator.Space"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:text="@string/fragment_back_stack_subtitle"
+            style="@style/MaterialText.SubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                style="@style/MaterialText.SubTitle"
+                android:text="@string/fragment_back_stack_switch"
+                android:checked="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:text="@string/fragment_back_stack_description"
+            style="@style/MaterialText.Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View style="@style/Separator.Space"/>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:text="@string/fragment_navigation_description"
+            style="@style/MaterialText.SubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/switchTo"
+            app:icon="@drawable/ic_switch"
+            style="@style/MaterialButton.Accent"
+            android:text="@string/Switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:text="@string/fragment_switch_description"
+            style="@style/MaterialText.Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/navigateTo"
+            app:icon="@drawable/ic_navigate"
+            style="@style/MaterialButton.Secondary"
+            android:text="@string/navigate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:text="@string/fragment_navigate_description"
+            style="@style/MaterialText.Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/restartFrom"
+            app:icon="@drawable/ic_restart"
+            style="@style/MaterialButton.Primary"
+            android:text="@string/restart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:text="@string/fragment_restart_description"
+            style="@style/MaterialText.Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</ScrollView>

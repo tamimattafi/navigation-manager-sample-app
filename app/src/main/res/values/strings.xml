@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Navigation Manager</string>
+    <string name="main_fragment_title">Navigation Manager</string>
+    <string name="main_fragment_subtitle">Please choose your NavigationActivity\'s type to continue</string>
+    <string name="dagger">Dagger</string>
+    <string name="basic">Basic</string>
+    <string name="animation">Animation</string>
+    <string name="animation_slide_left">Slide Left</string>
+    <string name="fragment_animation_subtitle">1. Select an animation for your transaction</string>
+    <string name="fragment_back_stack_subtitle">2. Handle Back-Stack</string>
+
+    <string name="fragment_navigation_description">3. Choose your navigation type</string>
+    <string name="Switch">Switch</string>
+    <string name="navigate">Navigate</string>
+    <string name="restart">Restart</string>
+    <string name="attach_new_fragment">Attach new Fragment?</string>
+    <string name="fragment_back_stack_switch">Add current Fragment to back stack</string>
+    <string name="current_fragment_number">Current Fragment Number</string>
+    <string name="current_fragment_number_description">This is the number of attached fragments since the last restart</string>
+    <string name="fragment_back_stack_description">If the switch is checked, this fragment will not be added to back stack which means that it will not be attached again on back press</string>
+    <string name="fragment_animation_description">This will override the default transaction animation, which means that all the upcoming transaction animations will be the selected one, unless you change it again. Note that if a fragment was already attached using a specific animation, the closing animation won\'t change by changing default animation</string>
+    <string name="fragment_switch_description">Switch will replace the current fragment by a new fragment. This will destroy the fragment and clears it from memory. This is a good approach if your fragments save heavy data. Note that when you navigate back to the fragment, all of it\'s states are restored</string>
+    <string name="fragment_navigate_description">Navigate will attach a new fragment on top of the current fragment. This will keep the previous fragment alive and won\'t destroy it. This is a good approach for fragments with light data</string>
+    <string name="fragment_restart_description">Restart will clear the back-stack and replace the current fragment by a new one. This means that the previously attached fragments won\'t be accessible if you navigate back and will be completely destroyed and cleared from memory. This is a good approach for single-launch screens such as login, registration, welcome… etc</string>
+    <string name="navigate_back">Navigate Back</string>
+</resources>
