@@ -16,7 +16,7 @@
     <string name="attach_new_fragment">Attach new Fragment?</string>
     <string name="fragment_back_stack_switch">Add current Fragment to back stack</string>
     <string name="current_fragment_number">Current Fragment Number</string>
-    <string name="current_fragment_number_description">This is the number of attached fragments since the last restart</string>
+    <string name="current_fragment_number_description">This is the position of the current fragment in the navigation chain</string>
     <string name="fragment_back_stack_description">If the switch is checked, this fragment will not be added to back stack which means that it will not be attached again on back press</string>
     <string name="fragment_animation_description">This will override the default transaction animation, which means that all the upcoming transaction animations will be the selected one, unless you change it again. Note that if a fragment was already attached using a specific animation, the closing animation won\'t change by changing default animation</string>
     <string name="fragment_switch_description">Switch will replace the current fragment by a new fragment. This will destroy the fragment and clears it from memory. This is a good approach if your fragments save heavy data. Note that when you navigate back to the fragment, all of it\'s states are restored</string>

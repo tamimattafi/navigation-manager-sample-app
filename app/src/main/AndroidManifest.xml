@@ -5,20 +5,22 @@
 
     <application
         android:allowBackup="true"
+        android:name="com.tamimattafi.navigation.sample.main.dagger.DaggerSampleApplication"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".activities.BasicActivity"></activity>
-        <activity android:name=".activities.DaggerActivity" />
+
+        <activity android:name="com.tamimattafi.navigation.sample.main.basic.BasicSampleActivity"/>
+        <activity android:name="com.tamimattafi.navigation.sample.main.dagger.ui.DaggerSampleActivity" />
+
         <activity
-            android:name=".activities.MainActivity"
+            android:name="com.tamimattafi.navigation.sample.main.MainSampleActivity"
             android:configChanges="orientation|keyboardHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

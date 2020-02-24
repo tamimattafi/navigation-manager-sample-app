@@ -1,8 +1,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorAccentSecondary</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
@@ -62,7 +62,6 @@
     </style>
 
     <style name="MaterialText.Description" parent="MaterialText">
-        <item name="android:textStyle">italic</item>
         <item name="android:textColor">@android:color/darker_gray</item>
         <item name="android:textSize">@dimen/description_size</item>
     </style>
@@ -76,6 +75,7 @@
         <item name="android:layout_marginBottom">@dimen/button_top_bot_margin</item>
         <item name="android:padding">@dimen/button_padding</item>
         <item name="iconGravity">textStart</item>
+        <item name="cornerRadius">@dimen/default_radius</item>
         <item name="android:textAllCaps">false</item>
         <item name="android:textSize">@dimen/button_text_size</item>
         <item name="fontFamily">@font/lato</item>
@@ -83,7 +83,7 @@
 
     <style name="MaterialButton.Primary" parent="MaterialButton">
         <item name="android:textColor">@color/colorLight</item>
-        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="backgroundTint">@color/colorAccentSecondary</item>
     </style>
 
     <style name="MaterialButton.Secondary" parent="MaterialButton">

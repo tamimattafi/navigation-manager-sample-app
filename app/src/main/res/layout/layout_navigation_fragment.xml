@@ -2,7 +2,6 @@
 <ScrollView
     android:clickable="true"
     android:focusable="true"
-    android:background="@android:color/white"
     android:fillViewport="true"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
@@ -11,12 +10,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
-        android:padding="@dimen/default_padding"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/background_light"
+        android:layout_marginTop="@dimen/secondary_layout_margin"
+        android:layout_marginEnd="@dimen/secondary_layout_margin"
+        android:layout_marginStart="@dimen/secondary_layout_margin"
+        android:padding="@dimen/layout_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
         <com.google.android.material.textview.MaterialTextView
+            android:gravity="center"
             android:text="@string/current_fragment_number"
             style="@style/MaterialText.Title.Secondary"
             android:layout_width="match_parent"
@@ -25,18 +35,31 @@
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/number"
             android:gravity="center"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/colorAccentSecondary"
             style="@style/MaterialText.Title.Primary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
         <com.google.android.material.textview.MaterialTextView
+            android:gravity="center"
             android:text="@string/current_fragment_number_description"
             style="@style/MaterialText.Description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
-        <View style="@style/Separator.Space"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/background_light"
+        android:layout_marginTop="@dimen/secondary_layout_margin"
+        android:layout_marginEnd="@dimen/secondary_layout_margin"
+        android:layout_marginStart="@dimen/secondary_layout_margin"       android:padding="@dimen/layout_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <com.google.android.material.textview.MaterialTextView
             android:text="@string/attach_new_fragment"
@@ -56,7 +79,6 @@
             android:layout_height="wrap_content">
             <com.google.android.material.textfield.TextInputEditText
                 style="@style/MaterialEditText.Selector"
-                android:background="@android:color/transparent"
                 android:drawableEnd="@drawable/ic_arrow_left"
                 android:hint="@string/animation"
                 android:text="@string/animation_slide_left"
@@ -70,8 +92,17 @@
             style="@style/MaterialText.Description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
+    </LinearLayout>
 
-        <View style="@style/Separator.Space"/>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/background_light"
+        android:layout_marginTop="@dimen/secondary_layout_margin"
+        android:layout_marginEnd="@dimen/secondary_layout_margin"
+        android:layout_marginStart="@dimen/secondary_layout_margin"        android:padding="@dimen/layout_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <com.google.android.material.textview.MaterialTextView
             android:text="@string/fragment_back_stack_subtitle"
@@ -84,6 +115,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/backStack"
                 style="@style/MaterialText.SubTitle"
                 android:text="@string/fragment_back_stack_switch"
                 android:checked="true"
@@ -97,16 +129,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
-        <View style="@style/Separator.Space"/>
+    </LinearLayout>
 
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/background_light"
+        android:layout_margin="@dimen/secondary_layout_margin"
+        android:padding="@dimen/layout_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <com.google.android.material.textview.MaterialTextView
             android:text="@string/fragment_navigation_description"
             style="@style/MaterialText.SubTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-
-
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/switchTo"
@@ -122,6 +160,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
+        <View style="@style/Separator.Space"/>
+
         <com.google.android.material.button.MaterialButton
             android:id="@+id/navigateTo"
             app:icon="@drawable/ic_navigate"
@@ -130,11 +170,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
+
         <com.google.android.material.textview.MaterialTextView
             android:text="@string/fragment_navigate_description"
             style="@style/MaterialText.Description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
+
+        <View style="@style/Separator.Space"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/restartFrom"
@@ -144,12 +187,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
-
         <com.google.android.material.textview.MaterialTextView
             android:text="@string/fragment_restart_description"
             style="@style/MaterialText.Description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+
     </LinearLayout>
 
 </ScrollView>

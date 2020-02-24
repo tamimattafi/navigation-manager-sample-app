@@ -16,6 +16,7 @@
 
     <TextView
         android:id="@+id/title"
+        style="@style/MaterialText.SubTitle"
         android:layout_centerVertical="true"
         android:layout_toEndOf="@id/back"
         android:layout_toStartOf="@id/close"
