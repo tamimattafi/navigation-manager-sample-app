@@ -11,10 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:ignore="GoogleAppIndexingWarning">
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
 
-        <activity android:name="com.tamimattafi.navigation.sample.main.basic.BasicSampleActivity"/>
-        <activity android:name="com.tamimattafi.navigation.sample.main.dagger.ui.DaggerSampleActivity" />
+        <activity
+            android:theme="@style/AppTheme.Basic"
+            android:name="com.tamimattafi.navigation.sample.main.basic.BasicSampleActivity"/>
+
+        <activity
+            android:theme="@style/AppTheme.Dagger"
+            android:name="com.tamimattafi.navigation.sample.main.dagger.ui.DaggerSampleActivity" />
 
         <activity
             android:name="com.tamimattafi.navigation.sample.main.MainSampleActivity"

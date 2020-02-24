@@ -1,11 +1,11 @@
-package com.tamimattafi.navigation.sample.main.extenstions
+package com.tamimattafi.navigation.sample.main.tools
 
 import com.tamimattafi.navigation.core.fragments.BaseNavigationFragment
 import com.tamimattafi.navigation.sample.global.Launcher
 
-abstract class SampleLauncher<F: BaseNavigationFragment> : Launcher<F>() {
+abstract class SampleFragmentLauncher<F: BaseNavigationFragment> : Launcher<F>() {
 
-    protected abstract val fragmentCreator: FragmentCreator<F>
+    protected abstract val fragmentCreator: SampleFragmentCreator<F>
 
     override val launcherFragment: F
         get() = fragmentCreator.newInstance(START_POSITION)
@@ -15,8 +15,8 @@ abstract class SampleLauncher<F: BaseNavigationFragment> : Launcher<F>() {
     }
 
     companion object {
-        private const val START_POSITION = 1
-        private const val NAVIGATION_STEP = 1
+        const val START_POSITION = 1
+        const val NAVIGATION_STEP = 1
     }
 
 }

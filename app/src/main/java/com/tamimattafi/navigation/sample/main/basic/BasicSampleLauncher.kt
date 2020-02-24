@@ -1,11 +1,11 @@
 package com.tamimattafi.navigation.sample.main.basic
 
-import com.tamimattafi.navigation.sample.main.extenstions.FragmentCreator
-import com.tamimattafi.navigation.sample.main.extenstions.SampleLauncher
+import com.tamimattafi.navigation.sample.main.tools.SampleFragmentCreator
+import com.tamimattafi.navigation.sample.main.tools.SampleFragmentLauncher
 
-class BasicSampleLauncher : SampleLauncher<BasicSampleFragment>() {
+class BasicSampleLauncher : SampleFragmentLauncher<BasicSampleFragment>() {
 
-    override val fragmentCreator: FragmentCreator<BasicSampleFragment>
-            = FragmentCreator(BasicSampleFragment::class.java)
+    override val fragmentCreator: SampleFragmentCreator<BasicSampleFragment>
+            = SampleFragmentCreator(BasicSampleFragment::class.java)
 
 }

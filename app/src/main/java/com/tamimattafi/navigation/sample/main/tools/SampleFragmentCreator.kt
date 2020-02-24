@@ -1,9 +1,9 @@
-package com.tamimattafi.navigation.sample.main.extenstions
+package com.tamimattafi.navigation.sample.main.tools
 
 import android.os.Bundle
 import com.tamimattafi.navigation.core.fragments.BaseNavigationFragment
 
-class FragmentCreator<F: BaseNavigationFragment>(private val clazz: Class<F>) {
+class SampleFragmentCreator<F: BaseNavigationFragment>(private val clazz: Class<F>) {
 
     fun newInstance(fragmentNumber: Int): F
         = clazz.newInstance().apply {

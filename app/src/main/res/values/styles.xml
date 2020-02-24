@@ -2,8 +2,16 @@
 
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/colorAccentSecondary</item>
-        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorSecondary</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Basic">
+        <item name="colorPrimaryDark">@color/colorSecondary</item>
+    </style>
+
+    <style name="AppTheme.Dagger">
+        <item name="colorPrimaryDark">@color/colorAccent</item>
     </style>
 
     <style name="Icon" parent="Widget.AppCompat.ImageButton">

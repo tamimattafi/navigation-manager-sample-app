@@ -1,11 +1,11 @@
 package com.tamimattafi.navigation.sample.main.dagger.ui
 
-import com.tamimattafi.navigation.sample.main.extenstions.FragmentCreator
-import com.tamimattafi.navigation.sample.main.extenstions.SampleLauncher
+import com.tamimattafi.navigation.sample.main.tools.SampleFragmentCreator
+import com.tamimattafi.navigation.sample.main.tools.SampleFragmentLauncher
 
-class DaggerSampleLauncher : SampleLauncher<DaggerSampleFragment>() {
+class DaggerSampleLauncher : SampleFragmentLauncher<DaggerSampleFragment>() {
 
-    override val fragmentCreator: FragmentCreator<DaggerSampleFragment>
-            = FragmentCreator(DaggerSampleFragment::class.java)
+    override val fragmentCreator: SampleFragmentCreator<DaggerSampleFragment>
+            = SampleFragmentCreator(DaggerSampleFragment::class.java)
 
 }
