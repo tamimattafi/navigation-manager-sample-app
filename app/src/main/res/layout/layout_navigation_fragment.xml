@@ -73,22 +73,44 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+        <RadioGroup
+            android:id="@+id/animationsGroup"
+            android:padding="@dimen/default_margin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <com.google.android.material.textfield.TextInputEditText
-                style="@style/MaterialEditText.Selector"
-                android:drawableEnd="@drawable/ic_arrow_left"
-                android:hint="@string/animation"
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                style="@style/MaterialText.SubTitle"
                 android:text="@string/animation_slide_left"
+                android:id="@+id/slideLeft"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableRight="@drawable/ic_arrow_left" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                style="@style/MaterialText.SubTitle"
+                android:text="@string/animation_slide_right"
+                android:id="@+id/slideRight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                style="@style/MaterialText.SubTitle"
+                android:text="@string/animation_none"
+                android:id="@+id/noAnimation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
 
         <com.google.android.material.textview.MaterialTextView
             android:text="@string/fragment_animation_description"
+            style="@style/MaterialText.Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:text="@string/fragment_animation_note"
             style="@style/MaterialText.Description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>

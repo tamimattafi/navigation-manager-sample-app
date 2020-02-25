@@ -23,4 +23,7 @@
     <string name="fragment_navigate_description">Navigate will attach a new fragment on top of the current fragment. This will keep the previous fragment alive and won\'t destroy it. This is a good approach for fragments with light data</string>
     <string name="fragment_restart_description">Restart will clear the back-stack and replace the current fragment by a new one. This means that the previously attached fragments won\'t be accessible if you navigate back and will be completely destroyed and cleared from memory. This is a good approach for single-launch screens such as login, registration, welcome… etc</string>
     <string name="navigate_back">Navigate Back</string>
+    <string name="animation_slide_right">Slide Right</string>
+    <string name="animation_none">No Animation</string>
+    <string name="fragment_animation_note">Note that you are able to override animations for each fragment separatelly. You\'re also able to create your own animations.</string>
 </resources>
